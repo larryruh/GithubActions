@@ -59,8 +59,8 @@
     <table border=0>   
         <tr>
             <td>
-                 <a href="application_list.php" target="results_frame">&nbsp;&nbsp;&nbsp;Search</a><br>
-                <a href="edit_job.php?mode=new" target="results_frame">&nbsp;&nbsp;&nbsp;Add New</a>
+                 <a href="application_list.php" id="search_app" target="results_frame">&nbsp;&nbsp;&nbsp;Search</a><br>
+                <a href="edit_job.php?mode=new" id="new_app" target="results_frame">&nbsp;&nbsp;&nbsp;Add New</a>
             </td>
         </tr>
     </table>
