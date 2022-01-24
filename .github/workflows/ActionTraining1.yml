@@ -1,0 +1,26 @@
+name: actionTest
+
+on: [push]
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Date for unbuntu
+        run: echo "$(date)"
+  job2:
+    runs-on: windows-latest
+    steps:
+      - name: Print Date for Windows
+        run: echo "$(date)"
+  job3:
+    runs-on: macos-latest
+    steps:
+      - name: Print Date for MacOS
+        run: echo "$(date)"
+  job4:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Date for unbuntu
+        run: echo "$(date)"
+    needs: [job1, job2, job3]
